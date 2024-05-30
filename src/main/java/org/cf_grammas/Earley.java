@@ -90,9 +90,9 @@ public class Earley {
         }
 
         if (D[word.length()].contains(new Situation(new Rule("S1", "S"), 0, 1))) {
-            return "YES";
+            return "Слово " + "\u001B[35m" + word + "\u001B[0m" + " принадлежит данной грамматике";
         } else {
-            return "NO";
+            return  "Слово " + word + " НЕ принадлежит данной грамматике";
         }
     }
 }
